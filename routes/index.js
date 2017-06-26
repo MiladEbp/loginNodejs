@@ -1,32 +1,37 @@
 var express = require('express');
 var router = express.Router();
-
 var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
 
-// /* GET home page. */
- //router.get('/', function(req, res, next) {
- // res.render('index', { title: 'Express' });
-//});
 
+////////////////////////////////////////////////////////START VASH//////////////////////////////////////////////////////
 
 router.get('/login', function (req, res) {
-    res.render('login',{
-        title:'login'
-    });
-});
 
-router.post('/wel',function (req, res) {
-    res.render('wel', {
-      username: req.body.username,
-       password:req.body.password
+    res.render('login', {
+        title: 'LOGIN FORM (vash)',
+        lab1:'UserName : ',
+        lab2:'Password : '
     });
-});
 
-router.post('/login',function(req, res){
+});
+ router.post('/well',function(req,res){
+     res.render('well',{
+         title:"Well Come in Page ",
+         tit1:"Yor UserName is  : ",
+         tit2:"Yor Password is : ",
+         username:req.body.username,
+         password:req.body.pass
+
+     });
+
+ });
+
+ router.post('/login',function (req, res) {
      res.redirect('login');
-});
+ });
 
+///////////////////////////////////////////////////////END VASH/////////////////////////////////////////////////////////
 
 
 
