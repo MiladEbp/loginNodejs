@@ -1,5 +1,5 @@
 {
-  "name": "untitled3",
+  "name": "loginNodejs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "express": "~4.15.2",
     "jade": "~1.11.0",
     "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "vash": "^0.12.2"
   }
 }
