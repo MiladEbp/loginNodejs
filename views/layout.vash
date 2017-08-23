@@ -3,8 +3,10 @@
 <html>
     <head>
         <title>@model.title</title>
+
     </head>
+
     <body>
          @html.block('body')
-    </body>
+     </body>
 </html>
